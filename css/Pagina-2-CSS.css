@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav{
+	background-color:#b3544f;
+}
+
+h2, 
+h1{
+	color:#592929;
+	
+
+
+}
+
+p{
+	color:#592929;
+	font-size: 19px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.jumbotron {
+  background: url("../images/fondo3.jpg") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+
+.jumbotron {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+
+
+
+.card-header {
+  background-color: #b3544f;
+  transition: background-color 0.3s ease;
+	
+}
+
+
+.card-header:hover {
+  background-color: #300511;
+}
+
+.card-header .btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-decoration: none;
+	position: relative;
+}
+
+
+
+.card-header:hover .btn-link {
+  color: #d6c296;
+}
+
+
+
+#countdown span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#countdown{
+	color: #300511;
+}
+
+
+
+.estrellas-hover {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	width: 100%;
+  gap: 12px;
+  background: transparent;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  text-align: center;
+  transition: color 0.3s ease;
+	
+}
+
+
+
+.estrellas-hover::before,
+.estrellas-hover::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: url('../images/estrellas.png') no-repeat center center;
+  background-size: contain;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+}
+
+.card-header:hover .estrellas-hover::before,
+.card-header:hover .estrellas-hover::after {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.estrellas-hover::before {
+  margin-right: 8px;
+}
+
+.estrellas-hover::after {
+  margin-left: 8px;
+}
+
+
+
+
+
+.card-body{
+	font-size: 20px;
+}
+
+.my-des{
+	padding-top: 20px;
+}
+
+.slide{
+	margin-top: 10px;
+}
+
+.slide img{
+	height: 540px;
+}
+
+.card-header{
+	background-color:#b3544f;
+}
+
+.btn-link {
+	color:white;
+}
+
+.btn-link:hover{
+	color:#d6c296;
+	
+}
+
+
+@media (max-width: 768px) {
+  .jumbotron {
+    background-image: url(../images/fondo-movil-2.jpg); 
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+  }

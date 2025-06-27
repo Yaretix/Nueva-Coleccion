@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+nav{
+	background-color:#b3544f;
+}
+
+
+.slide{
+	margin-top: 10px;
+}
+
+.slide img{
+	height: 540px;
+}
+
+.carousel-item img {
+  object-fit: cover; 
+  height: 100%; 
+}
+
+.jumbotron{
+	background-image: url(../images/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: auto;
+	height: 900px;
+	object-fit: cover; 
+  height: 100%; 
+		
+}
+
+
+
+
+
+
+
+.jum{
+	color: #300511;
+}
+
+.form{
+	background-image: url("../images/f-f.jpg");
+	padding: 20px;
+	border-radius: 20px;
+	color: aliceblue
+}
+
+
+
+
+
+.boton-hover {
+  display: inline-flex;
+  align-items: center;      
+  justify-content: center; 
+  gap: 16px;             
+  padding: 12px 24px;
+  background-color: #300511;
+  color: white;
+  border: none;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  min-height: 48px; 
+}
+
+.boton-hover:hover {
+  background-color: #d6c296;
+  transform: scale(1.05);
+  color: #300511;
+  box-shadow: 0 0 10px #d6c296;
+}
+
+.boton-hover .sparkle {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("../images/estrellas-1.png") no-repeat center center;
+  background-size: contain;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  filter: drop-shadow(0 0 4px #fff5cc);
+}
+
+.boton-hover:hover .sparkle {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.texto-btn {
+  z-index: 1;
+}
+
+
+.boton-hover .sparkle-1 {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("../images/estrellas.png") no-repeat center center;
+  background-size: contain;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  filter: drop-shadow(0 0 4px #fff5cc);
+}
+
+.boton-hover:hover .sparkle-1 {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.texto-btn {
+  z-index: 1; 
+}
+
+
+.img-hover-shadow {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.img-hover-shadow:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+
+
+
+
+.image-wrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 50%; 
+  overflow: hidden;   
+}
+
+.image-wrapper:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+	 
+}
+
+
+
+.img-hover {
+  opacity: 0;
+}
+
+.image-wrapper:hover .img-hover {
+  opacity: 1;
+}
+
+.image-wrapper:hover .img-original {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+.kbd-custom {
+	background-color: #b3544f;
+}
+
+
+
+.display-6 h2{
+	color: #300511;
+}
+
+
+
+@media (max-width: 768px) {
+  .jumbotron {
+    background-image: url(../images/fondo-movil.jpg); 
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+  }
+	
+  .form {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  form {
+    padding: 20px;
+  }
+	
+
+
+}
+
+
+
